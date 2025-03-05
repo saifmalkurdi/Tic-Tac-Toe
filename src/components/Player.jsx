@@ -6,8 +6,8 @@ export default function Player({
   isActive,
   onChangeName,
 }) {
-  const [isEditing, setIsEditing] = useState(false);
   const [playerName, setPlayerName] = useState(initialName);
+  const [isEditing, setIsEditing] = useState(false);
 
   function handleEditing() {
     setIsEditing((editing) => !editing);
